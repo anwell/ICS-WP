@@ -1,0 +1,15 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Release\ApplicationIcon.png
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Release\Background.png
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Release\ICS.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Release\ICS.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Release\AppManifest.xaml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Release\ICS.xap
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\App.g.i.cs
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\MainPage.g.i.cs
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\ICS.g.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\ICS.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\ICS.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\XapCacheFile.xml

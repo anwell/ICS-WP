@@ -1,0 +1,31 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Debug\ApplicationIcon.png
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Debug\Background.png
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Debug\ICS.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Debug\ICS.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Debug\AppManifest.xaml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Debug\ICS.xap
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Debug\App.g.i.cs
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Debug\MainPage.g.i.cs
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Debug\ICS.g.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Debug\ICS.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Debug\ICS.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Debug\XapCacheFile.xml
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\ApplicationIcon.png
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\Background.png
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\ICS.dll
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\ICS.pdb
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\AppManifest.xaml
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\ICS.xap
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\App.g.i.cs
+C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\MainPage.g.i.cs
+C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\ICS.g.resources
+C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\ICS.dll
+C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\ICS.pdb
+C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\XapCacheFile.xml
+C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\clubs.g.i.cs
