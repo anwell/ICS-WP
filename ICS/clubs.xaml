@@ -28,7 +28,14 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:WebBrowser HorizontalAlignment="Left" Margin="309,42,0,0" Name="webBrowser1" VerticalAlignment="Top" />
+            <phone:WebBrowser HorizontalAlignment="Stretch" Name="webBrowser1" VerticalAlignment="Stretch" LoadCompleted="webBrowser1_LoadCompleted" Opacity="0">
+                <phone:WebBrowser.Background>
+                    <SolidColorBrush />
+                </phone:WebBrowser.Background>
+                <phone:WebBrowser.Foreground>
+                    <SolidColorBrush />
+                </phone:WebBrowser.Foreground>
+            </phone:WebBrowser>
         </Grid>
     </Grid>
  
