@@ -24,22 +24,26 @@
                 <TextBlock Text="international community school" FontSize="150" Margin="0,24,0,0"/>
             </controls:Panorama.Title>
             <controls:Panorama.Background>
-                <ImageBrush ImageSource="/ICS;component/background.jpg" Stretch="UniformToFill" Opacity="0.87" />
+                <ImageBrush ImageSource="/ICS;component/background.jpg" Stretch="UniformToFill" Opacity="0.5" />
             </controls:Panorama.Background>
             <!--Panorama item one-->
             <controls:PanoramaItem Header="home">
+                <Grid>
+                <ProgressBar IsIndeterminate="True" Name="homeProgressBar" IsEnabled="True" Visibility="Visible" />
                 <!--Double line list with text wrapping-->
                 <ListBox Margin="0,0,-12,0"  Name="homeListBox">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Margin="0,0,0,17" Width="432" Height="78">
-                                <TextBlock Text="{Binding Title}" TextWrapping="NoWrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                <TextBlock Text="{Binding Date}" TextWrapping="NoWrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                <TextBlock Text="{Binding Title}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}" MinHeight="20" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
+                </Grid>
             </controls:PanoramaItem>
+                
  
             <!--Panorama item two-->
             <!--Use 'Orientation="Horizontal"' to enable a panel that lays out horizontally-->
@@ -61,9 +65,13 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>-->
                     <ListBox.Items>
-                        <ListBoxItem Tap="ListBoxItem_Tap">
+                        <ListBoxItem Tap="ListBoxItemASB_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/373010_77435060602_1552402172_n.jpg" Stretch="UniformToFill" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="ASB" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="Associated Student Body" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
@@ -203,7 +211,10 @@
             <!--Panorama item one-->
             <controls:PanoramaItem Header="calendar">
                 <!--Double line list with text wrapping-->
-                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" >
+                <Grid>
+                    <ProgressBar IsIndeterminate="True" Name="calendarProgressBar" />
+                <ListBox Margin="0,0,-12,0"  Name="calendarListBox">
+                    
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
@@ -214,13 +225,14 @@
                                 </StackPanel>
                                 
                                 <StackPanel Width="311">
-                                    <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                    <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                    <TextBlock Text="{Binding Title}"  Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                    <TextBlock Text="{Binding Description}" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
+                </Grid>
             </controls:PanoramaItem>
 
             <!--Panorama item two-->
@@ -229,7 +241,10 @@
                 <!--Double line list with image placeholder and text wrapping-->
                 <StackPanel>
                     <TextBlock Text="PICTURES" />
-                    <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" MaxHeight="256">
+                    <Grid>
+                        <ProgressBar IsIndeterminate="True" Name="picturesProgressBar" />
+                    
+                    <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" MaxHeight="256" Name="picturesListBox">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
@@ -240,21 +255,27 @@
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
+                    </Grid>
                     <TextBlock Text="VIDEOS" />
-                    <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" MaxHeight="212">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                    <!--Replace rectangle with image-->
-                                    <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
-                                    <StackPanel Width="311">
-                                        <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                        <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                    <Grid>
+                        <ProgressBar IsIndeterminate="True" Name="videosProgressBar" />
+                        <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" MaxHeight="212" Name="videosListBox">
+
+
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
+                                        <!--Replace rectangle with image-->
+                                        <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                        <StackPanel Width="311">
+                                            <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                            <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
                 </StackPanel>
             </controls:PanoramaItem>
 

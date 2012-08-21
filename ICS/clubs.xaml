@@ -28,6 +28,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ProgressBar IsIndeterminate="True" />
             <phone:WebBrowser HorizontalAlignment="Stretch" Name="webBrowser1" VerticalAlignment="Stretch" LoadCompleted="webBrowser1_LoadCompleted" Opacity="0">
                 <phone:WebBrowser.Background>
                     <SolidColorBrush />

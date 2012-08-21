@@ -27,10 +27,28 @@ namespace ICS
             this.Loaded += new RoutedEventHandler(MainPage_Loaded);
 
             //WebClient.
+            string videosURL = "http://www.youtube.com/rss/user/respectthephoenix/videos.rss";
+            string picturesURL = "https://picasaweb.google.com/data/feed/base/user/108546236473040953940/albumid/5778978916894706129?alt=rss&kind=photo&hl=en_US";
+            string calendarURL = "http://feeds.feedburner.com/icscalendar";
+
 
             var wc = new WebClient();
             wc.DownloadStringCompleted += new DownloadStringCompletedEventHandler(homeStringHandler);
+            wc.DownloadStringAsync((new Uri("http://feeds.feedburner.com/google/mUzI")));
             //wc.DownloadStringAsync((new Uri("http://feeds.feedburner.com/TechCrunch/")));
+
+             WebClient wc2 = new WebClient();
+            wc2.DownloadStringCompleted += new DownloadStringCompletedEventHandler(videosStringHandler);
+            wc2.DownloadStringAsync((new Uri(videosURL)));
+
+            WebClient wc3 = new WebClient();
+            wc3.DownloadStringCompleted += new DownloadStringCompletedEventHandler(picturesStringHandler);
+            wc3.DownloadStringAsync((new Uri(picturesURL)));
+
+            WebClient wc4 = new WebClient();
+            wc4.DownloadStringCompleted += new DownloadStringCompletedEventHandler(calendarStringHandler);
+            wc4.DownloadStringAsync((new Uri(calendarURL)));
+            
         }
 
         private void homeStringHandler(object sender, DownloadStringCompletedEventArgs e)
@@ -44,51 +62,55 @@ namespace ICS
                                        //ImageSource = tweet.Element("media").Attribute("url").Value,
                                        Description = tweet.Element("description").Value,
                                        Title = tweet.Element("title").Value,
-                                       Date = DateTime.Parse(tweet.Element("pubDate").Value)
+                                       //Date = DateTime.Parse(tweet.Element("pubDate").Value)
                                    };
             //homeListBox.ItemsSource = items;
             //homeListBox.UpdateLayout();
+            homeProgressBar.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         private void videosStringHandler(object sender, DownloadStringCompletedEventArgs e)
         {
             XElement xDoc = XElement.Parse(e.Result);
-            XNamespace ns = "urlhere.com///";
-            homeListBox.ItemsSource = from tweet in xDoc.Descendants("item")
+            XNamespace ns = "";
+            videosListBox.ItemsSource = from tweet in xDoc.Descendants("item")
                 select new RssItem
                 {
-                    ImageSource = tweet.Element("media").Attribute("url").Value,
+                    //ImageSource = tweet.Element("media").Attribute("url").Value,
                     Description = tweet.Element("description").Value,
                     Title = tweet.Element("title").Value,
                     Date = DateTime.Parse(tweet.Element("pubDate").Value)
                 };
+            videosProgressBar.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         private void picturesStringHandler(object sender, DownloadStringCompletedEventArgs e)
         {
             XElement xDoc = XElement.Parse(e.Result);
-            XNamespace ns = "urlhere.com///";
-            homeListBox.ItemsSource = from tweet in xDoc.Descendants("item")
+            XNamespace ns = "";
+            picturesListBox.ItemsSource = from tweet in xDoc.Descendants("item")
                     select new RssItem
                     {
-                        ImageSource = tweet.Element("media").Attribute("url").Value,
+                        //ImageSource = tweet.Element("media").Attribute("url").Value,
                         Description = tweet.Element("description").Value,
                         Title = tweet.Element("title").Value,
                         Date = DateTime.Parse(tweet.Element("pubDate").Value)
                     };
+            picturesProgressBar.Visibility = System.Windows.Visibility.Collapsed;
         }
         private void calendarStringHandler(object sender, DownloadStringCompletedEventArgs e)
         {
             XElement xDoc = XElement.Parse(e.Result);
-            XNamespace ns = "urlhere.com///";
-            homeListBox.ItemsSource = from tweet in xDoc.Descendants("item")
+            XNamespace ns = "";
+            calendarListBox.ItemsSource = from tweet in xDoc.Descendants("item")
                                       select new RssItem
                                       {
                                           //ImageSource = tweet.Element("media").Attribute("url").Value,
                                           Description = tweet.Element("description").Value,
                                           Title = tweet.Element("title").Value,
-                                          Date = DateTime.Parse(tweet.Element("pubDate").Value)
+                                          //Date = DateTime.Parse(tweet.Element("pubDate").Value)
                                       };
+            calendarProgressBar.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         // Load data for the ViewModel Items
@@ -101,10 +123,10 @@ namespace ICS
             
         }
 
-        private void ListBoxItem_Tap(object sender, GestureEventArgs e)
+        private void ListBoxItemASB_Tap(object sender, GestureEventArgs e)
         {
             //string url = "http://www.google.com";
-            string url = "https://sites.google.com/site/mobileblankblack/";
+            string url = "https://sites.google.com/site/icsclubsasb/";
             NavigationService.Navigate(new Uri("/clubs.xaml?url="+url, UriKind.Relative));
         }
     }
