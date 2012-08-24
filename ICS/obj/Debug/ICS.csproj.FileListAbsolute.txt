@@ -29,3 +29,6 @@ C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\ICS.dll
 C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\ICS.pdb
 C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\XapCacheFile.xml
 C:\Users\Anwell\Documents\ICS\ICS\obj\Debug\clubs.g.i.cs
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml

@@ -13,3 +13,22 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\ICS.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\ICS.pdb
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ICS\ICS\obj\Release\XapCacheFile.xml
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\ApplicationIcon.png
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\Background.png
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\ICS.dll
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\ICS.pdb
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\AppManifest.xaml
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\ICS.xap
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Anwell\Documents\ICS\ICS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Anwell\Documents\ICS\ICS\obj\Release\App.g.i.cs
+C:\Users\Anwell\Documents\ICS\ICS\obj\Release\clubs.g.i.cs
+C:\Users\Anwell\Documents\ICS\ICS\obj\Release\MainPage.g.i.cs
+C:\Users\Anwell\Documents\ICS\ICS\obj\Release\ICS.g.resources
+C:\Users\Anwell\Documents\ICS\ICS\obj\Release\ICS.dll
+C:\Users\Anwell\Documents\ICS\ICS\obj\Release\ICS.pdb
+C:\Users\Anwell\Documents\ICS\ICS\obj\Release\XapCacheFile.xml

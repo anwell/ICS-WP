@@ -1,4 +1,4 @@
-﻿<phone:PhoneApplicationPage 
+﻿<phone:PhoneApplicationPage xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"  
     x:Class="ICS.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -17,11 +17,11 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
- 
+        <TextBlock Name="internetText" Text="Check your internet connection." Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <!--Panorama control-->
         <controls:Panorama>
             <controls:Panorama.Title>
-                <TextBlock Text="international community school" FontSize="150" Margin="0,24,0,0"/>
+                <TextBlock Text="international community school" FontSize="150" Margin="0,24,0,0"  />
             </controls:Panorama.Title>
             <controls:Panorama.Background>
                 <ImageBrush ImageSource="/ICS;component/background.jpg" Stretch="UniformToFill" Opacity="0.5" />
@@ -29,14 +29,15 @@
             <!--Panorama item one-->
             <controls:PanoramaItem Header="home">
                 <Grid>
+                
                 <ProgressBar IsIndeterminate="True" Name="homeProgressBar" IsEnabled="True" Visibility="Visible" />
                 <!--Double line list with text wrapping-->
                 <ListBox Margin="0,0,-12,0"  Name="homeListBox">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <StackPanel Margin="0,0,0,17" Width="432" Height="78">
+                            <StackPanel Margin="0,0,0,17" Width="432" >
                                 <TextBlock Text="{Binding Title}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}" MinHeight="20" />
+                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -78,126 +79,182 @@
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemFBLA_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/images.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="FBLA" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="Future Business Leaders of America" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemKey_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/200px-Keyclub.png" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="Key Club" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemMock_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/Mock%20Trial%20Logo.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="Mock Trial" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemMUN_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/un.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="MUN" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="Model United Nations" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemNHS_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/NHS.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="NHS" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="National Honor Society" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemNAHS_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/nahs.png" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="NAHS" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="National Art Honor Society" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemSNHS_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/snhslogo.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="SNHS" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="Science National Honor Society" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemDrama_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/200px-Drama-icon.svg.png" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="Drama" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemEnsemble_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/Orchestral_Symbol.png" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
-                                    <TextBlock Text="Orchestra + Ensemble" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                    <TextBlock Text="Ensemble" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemChoir_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/Choir.CD071906KK.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="Choir" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemTaste_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/worldmap1.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="Taste of ICS" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemEnvironmental_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/environmental-club-fundraiser-21534028.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="Environmental Club" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemUltimate_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/GMO100_frisbee.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="Ultimate Frisbee" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                 </StackPanel>
                             </StackPanel>
                         </ListBoxItem>
-                        <ListBoxItem>
+                        <ListBoxItem Tap="ListBoxItemTech_Tap">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <Rectangle Height="100" Width="100" Margin="12,0,9,0">
+                                    <Rectangle.Fill>
+                                        <ImageBrush ImageSource="/ICS;component/Images/microphone.jpg" />
+                                    </Rectangle.Fill>
+                                </Rectangle>
                                 <StackPanel Width="311">
                                     <TextBlock Text="Tech Crew" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
                                     <TextBlock Text="" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
@@ -219,14 +276,10 @@
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
                                 <!--Replace rectangle with image-->
-                                <StackPanel>
-                                    <TextBlock Text="27" FontSize="64" />
-                                    <TextBlock Text="JANUARY"/>
-                                </StackPanel>
-                                
-                                <StackPanel Width="311">
-                                    <TextBlock Text="{Binding Title}"  Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                    <TextBlock Text="{Binding Description}" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                         
+                                <StackPanel >
+                                    <TextBlock Text="{Binding Title}"  Style="{StaticResource PhoneTextExtraLargeStyle}" TextWrapping="Wrap" MaxWidth="400"/>
+                                    <TextBlock Text="{Binding Description}" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}" MaxHeight="30" />
                                 </StackPanel>
                             </StackPanel>
                         </DataTemplate>
@@ -242,22 +295,24 @@
                 <StackPanel>
                     <TextBlock Text="PICTURES" />
                     <Grid>
-                        <ProgressBar IsIndeterminate="True" Name="picturesProgressBar" />
-                    
-                    <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" MaxHeight="256" Name="picturesListBox">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
-                                    <!--Replace rectangle with image-->
-                                    <Rectangle Height="200" Width="200" Fill="#FFE5001b" Margin="12,0,9,0"/>
-                                    <Rectangle Height="200" Width="200" Fill="#FFE5001b" Margin="12,0,9,0"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
+                        <ProgressBar IsIndeterminate="True" Name="picturesProgressBar" Margin="0,240,0,0" />
+                        <ListBox Margin="0,0,-12,0"  Name="picturesListBox" SelectionChanged="picturesListBox_SelectionChanged">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <toolkit:WrapPanel x:Name="wrapPanel" Width="650" />
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
+                                        <Image Height="200" Width="200" Margin="12,0,9,0" Source="{Binding ImageSource}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
                     </Grid>
-                    <TextBlock Text="VIDEOS" />
-                    <Grid>
+                    <TextBlock Text="VIDEOS" Visibility="Collapsed"/>
+                    <Grid Visibility="Collapsed">
                         <ProgressBar IsIndeterminate="True" Name="videosProgressBar" />
                         <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" MaxHeight="212" Name="videosListBox">
 
@@ -268,8 +323,8 @@
                                         <!--Replace rectangle with image-->
                                         <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
                                         <StackPanel Width="311">
-                                            <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                            <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                            <TextBlock Text="{Binding Title}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                            <!--<TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>-->
                                         </StackPanel>
                                     </StackPanel>
                                 </DataTemplate>
@@ -286,7 +341,7 @@
                     <TextBlock Text="11133 N.E. 65th St., Kirkland, WA 98033" />
                     <TextBlock Text="(425) 936-2380" />
                 <!--Double line list with text wrapping-->
-                    <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" >
+                    <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}" Height="450" SelectionChanged="ListBox_SelectionChanged">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
@@ -302,5 +357,6 @@
                 </StackPanel>
             </controls:PanoramaItem>
         </controls:Panorama>
+        
     </Grid>
 </phone:PhoneApplicationPage>

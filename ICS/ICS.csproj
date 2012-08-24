@@ -109,6 +109,20 @@
     <Resource Include="Images\logo.png" />
     <Resource Include="Images\220px-Icslogo.png" />
     <Resource Include="Images\373010_77435060602_1552402172_n.jpg" />
+    <Resource Include="Images\200px-Drama-icon.svg.png" />
+    <Resource Include="Images\200px-Keyclub.png" />
+    <Resource Include="Images\Choir.CD071906KK.jpg" />
+    <Resource Include="Images\environmental-club-fundraiser-21534028.jpg" />
+    <Resource Include="Images\GMO100_frisbee.jpg" />
+    <Resource Include="Images\images.jpg" />
+    <Resource Include="Images\microphone.jpg" />
+    <Resource Include="Images\Mock Trial Logo.jpg" />
+    <Resource Include="Images\NHS.jpg" />
+    <Resource Include="Images\Orchestral_Symbol.png" />
+    <Resource Include="Images\un.jpg" />
+    <Resource Include="Images\nahs.png" />
+    <Resource Include="Images\snhslogo.jpg" />
+    <Resource Include="Images\worldmap1.jpg" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />

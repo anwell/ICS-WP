@@ -61,23 +61,23 @@ namespace ICS
         public void LoadData()
         {
             // Sample data; replace with real data
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime one", LineTwo = "Maecenas praesent accumsan bibendum", LineThree = "Facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime two", LineTwo = "Dictumst eleifend facilisi faucibus", LineThree = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime three", LineTwo = "Habitant inceptos interdum lobortis", LineThree = "Habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime four", LineTwo = "Nascetur pharetra placerat pulvinar", LineThree = "Ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime five", LineTwo = "Maecenas praesent accumsan bibendum", LineThree = "Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime six", LineTwo = "Dictumst eleifend facilisi faucibus", LineThree = "Pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime seven", LineTwo = "Habitant inceptos interdum lobortis", LineThree = "Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime eight", LineTwo = "Nascetur pharetra placerat pulvinar", LineThree = "Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime nine", LineTwo = "Maecenas praesent accumsan bibendum", LineThree = "Facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime ten", LineTwo = "Dictumst eleifend facilisi faucibus", LineThree = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime eleven", LineTwo = "Habitant inceptos interdum lobortis", LineThree = "Habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime twelve", LineTwo = "Nascetur pharetra placerat pulvinar", LineThree = "Ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime thirteen", LineTwo = "Maecenas praesent accumsan bibendum", LineThree = "Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime fourteen", LineTwo = "Dictumst eleifend facilisi faucibus", LineThree = "Pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime fifteen", LineTwo = "Habitant inceptos interdum lobortis", LineThree = "Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" });
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime sixteen", LineTwo = "Nascetur pharetra placerat pulvinar", LineThree = "Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" });
-
+            this.Items.Add(new ItemViewModel() { LineOne = "Dr. Matthew Livingston", LineTwo = "Principal", LineThree = "mlivingston@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Harriett Peterson", LineTwo = "Office Manager", LineThree = "hpeterson@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Melissa Nelson", LineTwo = "Arts", LineThree = "menelson@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Kathy Comeau", LineTwo = "Arts + Academic Counselor", LineThree = "kcomeau@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Mark Rayder", LineTwo = "Arts", LineThree = "mrayder@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Diana Di-Tolla", LineTwo = "Spanish", LineThree = "dditolla@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Tim McFaul", LineTwo = "Sciences", LineThree = "tmcfaul@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Helen Henry", LineTwo = "Math", LineThree = "hhenry@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Nancy Sullivan", LineTwo = "Math", LineThree = "nasullivan@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Paul Plank", LineTwo = "Humanities + Film Studies", LineThree = "pplank@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Victoria Castaneda", LineTwo = "Humanities", LineThree = "vcastaneda@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Andrya Packer", LineTwo = "Humanities", LineThree = "apacker@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Ted Over", LineTwo = "International Studies", LineThree = "eover@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Mark Elliott", LineTwo = "International Studies + Video Production", LineThree = "melliot@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Mark Bach", LineTwo = "International Studies", LineThree = "mbach@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Nicole Winard", LineTwo = "Librarian", LineThree = "nwinard@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Mary Ajmera", LineTwo = "Para Educator", LineThree = "majemera@lwsd.org" });
             this.IsDataLoaded = true;
         }
 
