@@ -1,8 +1,8 @@
-﻿<xapCache source="C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\ICS.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="8/21/2012 9:38:51 PM">
+﻿<xapCache source="C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\ICS.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="11/5/2012 9:27:14 PM">
   <file source="C:\Users\Anwell\Documents\ICS\ICS\Bin\Release\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="5/9/2012 7:46:36 PM" />
   <file source="C:\Users\Anwell\Documents\ICS\ICS\Background.png" archivePath="Background.png" lastWriteTime="8/21/2012 9:25:44 PM" />
   <file source="C:\Users\Anwell\Documents\ICS\ICS\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="8/21/2012 9:26:07 PM" />
-  <file source="C:\Users\Anwell\Documents\ICS\ICS\obj\Release\ICS.dll" archivePath="ICS.dll" lastWriteTime="8/21/2012 9:38:49 PM" />
+  <file source="C:\Users\Anwell\Documents\ICS\ICS\obj\Release\ICS.dll" archivePath="ICS.dll" lastWriteTime="11/5/2012 9:27:02 PM" />
   <file source="C:\Program Files\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="9/15/2011 3:36:26 PM" />
   <file source="C:\Program Files\Microsoft SDKs\Windows Phone\v7.1\Toolkit\Oct11\Bin\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="10/6/2011 11:33:14 AM" />
   <file source="C:\Users\Anwell\Documents\ICS\ICS\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="5/9/2012 7:45:53 PM" />

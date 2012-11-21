@@ -63,21 +63,26 @@ namespace ICS
             // Sample data; replace with real data
             this.Items.Add(new ItemViewModel() { LineOne = "Dr. Matthew Livingston", LineTwo = "Principal", LineThree = "mlivingston@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Harriett Peterson", LineTwo = "Office Manager", LineThree = "hpeterson@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Sue Austin", LineTwo = "Office Assistant", LineThree = "saustin@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Melissa Nelson", LineTwo = "Arts", LineThree = "menelson@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Kathy Comeau", LineTwo = "Arts + Academic Counselor", LineThree = "kcomeau@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Mark Rayder", LineTwo = "Arts", LineThree = "mrayder@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Diana Di-Tolla", LineTwo = "Spanish", LineThree = "dditolla@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Nadia Miranda", LineTwo = "Spanish", LineThree = "nmirandanavas@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Tim McFaul", LineTwo = "Sciences", LineThree = "tmcfaul@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Dr. Madhu Sharma", LineTwo = "Sciences", LineThree = "msharma@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Julia Vasiliauska", LineTwo = "Sciences", LineThree = " jvasiliauskas@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Helen Henry", LineTwo = "Math", LineThree = "hhenry@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Brad Moore", LineTwo = "Math", LineThree = "bmoore@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Nancy Sullivan", LineTwo = "Math", LineThree = "nasullivan@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Paul Plank", LineTwo = "Humanities + Film Studies", LineThree = "pplank@lwsd.org" });
+            this.Items.Add(new ItemViewModel() { LineOne = "Brynne Garman", LineTwo = "Humanities", LineThree = "bgarman@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Victoria Castaneda", LineTwo = "Humanities", LineThree = "vcastaneda@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Andrya Packer", LineTwo = "Humanities", LineThree = "apacker@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Ted Over", LineTwo = "International Studies", LineThree = "eover@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Mark Elliott", LineTwo = "International Studies + Video Production", LineThree = "melliot@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Mark Bach", LineTwo = "International Studies", LineThree = "mbach@lwsd.org" });
             this.Items.Add(new ItemViewModel() { LineOne = "Nicole Winard", LineTwo = "Librarian", LineThree = "nwinard@lwsd.org" });
-            this.Items.Add(new ItemViewModel() { LineOne = "Mary Ajmera", LineTwo = "Para Educator", LineThree = "majemera@lwsd.org" });
             this.IsDataLoaded = true;
         }
 
