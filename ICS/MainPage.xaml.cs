@@ -30,28 +30,23 @@ namespace ICS
 
             if (NetworkInterface.GetIsNetworkAvailable())
             {
-                //WebClient.
-                //string videosURL = "http://feeds.feedburner.com/icsvideos";
-                string videosURL = "http://www.youtube.com/rss/user/respectthephoenix/videos.rss";
-                string picturesURL = "http://feeds.feedburner.com/icspictures";
-                string calendarURL = "http://feeds.feedburner.com/icscalendar";
+                // creating WebClients to download XML data and trigger an event handler
+                WebClient homeWebClient = new WebClient();
+                homeWebClient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(homeStringHandler);
+                homeWebClient.DownloadStringAsync((new Uri("http://feeds.feedburner.com/google/mUzI")));
 
-
-                var wc = new WebClient();
-                wc.DownloadStringCompleted += new DownloadStringCompletedEventHandler(homeStringHandler);
-                wc.DownloadStringAsync((new Uri("http://feeds.feedburner.com/google/mUzI")));
-
+                // If the app subscribed to ICS's Youtube videos.
                 // WebClient wc2 = new WebClient();
                 //wc2.DownloadStringCompleted += new DownloadStringCompletedEventHandler(videosStringHandler);
-                //wc2.DownloadStringAsync((new Uri(videosURL)));
+                //wc2.DownloadStringAsync((new Uri("http://www.youtube.com/rss/user/respectthephoenix/videos.rss")));
 
-                WebClient wc3 = new WebClient();
-                wc3.DownloadStringCompleted += new DownloadStringCompletedEventHandler(picturesStringHandler);
-                wc3.DownloadStringAsync((new Uri(picturesURL)));
+                WebClient picturesWebClient = new WebClient();
+                picturesWebClient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(picturesStringHandler);
+                picturesWebClient.DownloadStringAsync((new Uri("http://feeds.feedburner.com/icspictures")));
 
-                WebClient wc4 = new WebClient();
-                wc4.DownloadStringCompleted += new DownloadStringCompletedEventHandler(calendarStringHandler);
-                wc4.DownloadStringAsync((new Uri(calendarURL)));
+                WebClient calendarWebClient = new WebClient();
+                calendarWebClient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(calendarStringHandler);
+                calendarWebClient.DownloadStringAsync((new Uri("http://feeds.feedburner.com/icscalendar")));
             }
             else
             {
@@ -63,6 +58,7 @@ namespace ICS
             
         }
 
+        //upon finishing download, parse the XML
         private void homeStringHandler(object sender, DownloadStringCompletedEventArgs e)
         {
             XElement xDoc = XElement.Parse(e.Result);
@@ -76,8 +72,6 @@ namespace ICS
                                        Title = tweet.Element("title").Value,
                                        //Date = DateTime.Parse(tweet.Element("pubDate").Value)
                                    };
-            //homeListBox.ItemsSource = items;
-            //homeListBox.UpdateLayout();
             homeProgressBar.Visibility = System.Windows.Visibility.Collapsed;
         }
 
@@ -111,6 +105,7 @@ namespace ICS
                     };
             picturesProgressBar.Visibility = System.Windows.Visibility.Collapsed;
         }
+
         private void calendarStringHandler(object sender, DownloadStringCompletedEventArgs e)
         {
             XElement xDoc = XElement.Parse(e.Result);
@@ -127,7 +122,7 @@ namespace ICS
             calendarProgressBar.Visibility = System.Windows.Visibility.Collapsed;
         }
 
-
+        //remove html tags from text
         public static string StripTagsCharArray(string source)
         {
 	        char[] array = new char[source.Length];
